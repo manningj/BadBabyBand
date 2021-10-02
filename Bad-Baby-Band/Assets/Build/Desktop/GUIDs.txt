@@ -1,0 +1,14 @@
+{833c419f-5564-4574-8a1c-a9f0c6c09170} bank:/Master
+{1b21614b-241f-0936-0c55-230e373397e8} bank:/Master.strings
+{d3d04209-c662-4d61-9205-111b58df32ad} bus:/
+{f4ed4985-9634-4b6f-84c6-770fd45e0657} bus:/GRP01 - BG Music
+{3b77fb3b-b9f5-4fa8-bc87-a87cb68bda38} bus:/GRP02 - Baby Music
+{8848e1be-dac7-4ba8-a6f5-3e53781cff3c} bus:/GRP03 - SFX
+{ec00c726-af1f-4a19-adca-d1f2f28a6b3b} bus:/GRP04 Baby SFX
+{a02dc4a9-8109-4e76-af41-61feb0fc79bd} bus:/Reverb
+{ee7bb177-252d-45b2-b834-417458f258e3} event:/MUS01 - Menu
+{88b42250-64f8-4340-bcdb-87039d1ec085} event:/MUS02 - Victory
+{1458b813-9ec3-46a1-b1f6-9fbea85521a4} event:/MUS03 - Failure
+{5fb65584-b611-4187-a710-b53b20a5ef9c} event:/MUS04 - Baby 1
+{c402da7d-fbcf-492e-8dff-0b2e6888893f} parameter:/Progress
+{75c064a6-a9c1-4d39-9596-e8f51e2e39be} parameter:/Status
