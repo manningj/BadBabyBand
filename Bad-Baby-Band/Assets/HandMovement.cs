@@ -12,8 +12,8 @@ public class HandMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane));
-         mousePosition.z += 0.03f;
+        mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane + 0.03f));
+        mousePosition.z += 0.03f;
         
         Debug.Log(mousePosition);
         transform.position = new Vector3(mousePosition.x, mousePosition.y, mousePosition.z);
