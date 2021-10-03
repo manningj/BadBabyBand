@@ -16,7 +16,6 @@
      void Start()
      {
          // get the screen bounds
-         pos = new Vector3(spawnParent.transform.position.x, spawnParent.transform.position.y, spawnParent.transform.position.z);
          float camDistance = Vector3.Distance(transform.position, Camera.main.transform.position);
          Vector2 bottomCorner = Camera.main.ViewportToWorldPoint(new Vector3(0,0, camDistance));
          Vector2 topCorner = Camera.main.ViewportToWorldPoint(new Vector3(1,1, camDistance));
@@ -30,13 +29,19 @@
      public void CreateObject()
      {
          // a prefab is need to perform the instantiation
-         if (newGameObject != null)
+         if (newGameObject != null && spawnParent != null)
          {
-
+           
+             pos = new Vector3(spawnParent.transform.position.x, spawnParent.transform.position.y, spawnParent.transform.position.z);
              // get a random postion to instantiate the prefab - you can change this to be created at a fied point if desired
              Vector3 position = new Vector3(pos.x, pos.y, pos.z);
              // instantiate the object
              GameObject gameObject = (GameObject)Instantiate(newGameObject, position, Quaternion.identity);
+             gameObject.AddComponent<Rigidbody>();
+             gameObject.GetComponent<Rigidbody>().useGravity = true;
+             gameObject.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+             gameObject.AddComponent<FollowHand>();
+             
              createdObjects.Add(gameObject);
          }
      }    
