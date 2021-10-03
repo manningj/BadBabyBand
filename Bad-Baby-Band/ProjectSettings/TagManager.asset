@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - SM_Ball
+  - SM_Rattle
+  - SM_Cubes
+  - SM_Blanket
+  - SM_Soother
   layers:
   - Default
   - TransparentFX
