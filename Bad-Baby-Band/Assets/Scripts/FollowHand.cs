@@ -49,6 +49,7 @@ public class FollowHand : MonoBehaviour
      //  velocity = new Vector3(dragRelease.x - dragOrigin.x,dragRelease.y - dragOrigin.y, dragRelease.z- dragOrigin.z );
         rb.AddForce(0f, 10f, 10f, ForceMode.Impulse);
 
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX02 - Yeet");
         Debug.Log("Thrown");
     }
 
