@@ -38,10 +38,14 @@
              // instantiate the object
              GameObject gameObject = (GameObject)Instantiate(newGameObject, position, Quaternion.identity);
              gameObject.AddComponent<Rigidbody>();
-             gameObject.GetComponent<Rigidbody>().useGravity = true;
+             gameObject.GetComponent<Rigidbody>().useGravity = false;
+             gameObject.GetComponent<Rigidbody>().isKinematic = false;
+             gameObject.GetComponent<Rigidbody>().detectCollisions = true;
+
              gameObject.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
              gameObject.AddComponent<FollowHand>();
-             
+             gameObject.tag = newGameObject.gameObject.name;
+             gameObject.AddComponent<BoxCollider>();
              createdObjects.Add(gameObject);
          }
      }    
