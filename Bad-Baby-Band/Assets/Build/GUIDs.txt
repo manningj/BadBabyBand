@@ -10,5 +10,12 @@
 {88b42250-64f8-4340-bcdb-87039d1ec085} event:/MUS02 - Victory
 {1458b813-9ec3-46a1-b1f6-9fbea85521a4} event:/MUS03 - Failure
 {5fb65584-b611-4187-a710-b53b20a5ef9c} event:/MUS04 - Baby 1
+{40edf850-3ad5-40f6-89ab-1e3f357ad330} event:/MUS05 - Baby 2
+{4e98a94d-bb63-4690-9e80-ee9380da2301} event:/MUS06 - Baby 3
+{c714a2ed-1ac6-4d96-9647-ca35ab875869} event:/MUS07 - Baby 4
+{b5f9b7d4-ea93-4a69-8b4d-4a104d40388f} event:/SFX01 - Baton Swish
+{b3f45e57-88e4-4af6-b315-51a4d0118194} event:/SFX02 - Yeet
+{d25e88be-eb6f-42ca-901b-1780378c4ee2} event:/SFX03 - Knock
+{83f4468a-5f5d-4b0c-9bb1-7fcea25e04f4} event:/SFX04 - Grab
 {c402da7d-fbcf-492e-8dff-0b2e6888893f} parameter:/Progress
 {75c064a6-a9c1-4d39-9596-e8f51e2e39be} parameter:/Status
